@@ -1,3 +1,5 @@
+/* Help from the official solution helped me 
+understand some things in these files. */
 import React, { useEffect, useState } from "react";
 import StockContainer from "./StockContainer";
 import PortfolioContainer from "./PortfolioContainer";
@@ -30,7 +32,7 @@ function MainContainer() {
     );
   }
 
-  const sortedStocks = [...stocks].sort((stock1, stock2) => {
+  const sortedStocks = stocks.sort((stock1, stock2) => {
     if (sortBy === "Alphabetically") {
       return stock1.name.localeCompare(stock2.name);
     } else {
